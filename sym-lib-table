@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name SmartPlug)(type Legacy)(uri ${KIPRJMOD}/SmartPlug.lib)(options "")(descr ""))
+  (lib (name ThinglerV04-rescue)(type Legacy)(uri /Users/jarl/ownCloud/Documents/pcb/ThinglerV04/ThinglerV04-rescue.lib)(options "")(descr ""))
+  (lib (name ThinglerV05)(type Legacy)(uri ${KIPRJMOD}/ThinglerV05.lib)(options "")(descr ""))
 )
