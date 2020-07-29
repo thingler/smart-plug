@@ -169,7 +169,7 @@
     (add_net "Net-(R8-Pad2)")
   )
 
-  (module ThinglerV05:FODM3012 (layer F.Cu) (tedit 5E1CE0C1) (tstamp 5E1D39FB)
+  (module smart-plug:FODM3012 (layer F.Cu) (tedit 5E1CE0C1) (tstamp 5E1D39FB)
     (at 168.5 70.25 180)
     (path /5E242760)
     (fp_text reference U4 (at 0 0) (layer F.SilkS)
@@ -203,7 +203,7 @@
       (net 20 "Net-(R5-Pad1)"))
   )
 
-  (module ThinglerV05:ESP32-PICO-KIT (layer F.Cu) (tedit 5E0E23C8) (tstamp 5E0E6700)
+  (module smart-plug:ESP32-PICO-KIT (layer F.Cu) (tedit 5E0E23C8) (tstamp 5E0E6700)
     (at 145 86.75 90)
     (path /5E50E95B)
     (fp_text reference U1 (at 0 0 180) (layer F.SilkS)
@@ -602,7 +602,7 @@
     )
   )
 
-  (module ThinglerV05:ME3220 (layer F.Cu) (tedit 5E0E22A3) (tstamp 5E106C3B)
+  (module smart-plug:ME3220 (layer F.Cu) (tedit 5E0E22A3) (tstamp 5E106C3B)
     (at 157.25 73)
     (path /5E4B3B68)
     (fp_text reference L1 (at 0 2.75) (layer F.SilkS)
@@ -942,7 +942,7 @@
     )
   )
 
-  (module ThinglerV05:ABS10A (layer F.Cu) (tedit 5E0E1A9F) (tstamp 5E14FB08)
+  (module smart-plug:ABS10A (layer F.Cu) (tedit 5E0E1A9F) (tstamp 5E14FB08)
     (at 138.5 66.25 90)
     (path /5E1784CC)
     (fp_text reference D1 (at 0 0 180) (layer F.SilkS)
@@ -969,7 +969,7 @@
       (net 13 "Net-(D1-Pad4)"))
   )
 
-  (module ThinglerV05:Fuse (layer F.Cu) (tedit 5DF94AB5) (tstamp 5E136D5B)
+  (module smart-plug:Fuse (layer F.Cu) (tedit 5DF94AB5) (tstamp 5E136D5B)
     (at 131.75 66.25 180)
     (descr "Littelfuse, resettable fuse, PTC, polyswitch LVR100, Ih 1A http://www.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_lvr_catalog_datasheet.pdf.pdf")
     (tags "LVR100 PTC resettable polyswitch ")
