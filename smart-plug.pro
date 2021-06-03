@@ -1,4 +1,4 @@
-update=2020 August 02, Sunday 16:33:03
+update=2021 April 11, Sunday 11:37:09
 version=1
 last_client=kicad
 [general]
@@ -260,7 +260,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=AC230V_HIGH_POWER
 Clearance=1
-TrackWidth=4
+TrackWidth=12
 ViaDiameter=4
 ViaDrill=1.5
 uViaDiameter=0.3
