@@ -53,7 +53,7 @@ U 1 1 5E1784D1
 P 3000 1750
 F 0 "F1" V 2803 1750 50  0000 C CNN
 F 1 "Fuse 1A" V 2894 1750 50  0000 C CNN
-F 2 "smart-plug:Fuse" V 2930 1750 50  0001 C CNN
+F 2 "smart-plug:fuse-2410" V 2930 1750 50  0001 C CNN
 F 3 "~" H 3000 1750 50  0001 C CNN
 	1    3000 1750
 	0    1    1    0   
@@ -445,7 +445,7 @@ U 1 1 5E1784C7
 P 6800 5150
 F 0 "Q2" H 6550 5150 50  0000 L CNN
 F 1 "BTA316B-600E" H 6200 4900 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-2" H 7000 5075 50  0001 L CIN
+F 2 "smart-plug:to-263-2" H 7000 5075 50  0001 L CIN
 F 3 "http://www.nxp.com/documents/data_sheet/BT138_SER_D_E.pdf" H 6800 5150 50  0001 L CNN
 	1    6800 5150
 	1    0    0    -1  
@@ -602,12 +602,12 @@ Wire Wire Line
 NoConn ~ 3500 4600
 Wire Wire Line
 	3200 5950 5400 5950
-NoConn ~ 3850 5150
+NoConn ~ 3850 5250
 Wire Wire Line
 	4850 5050 4250 5050
-Wire Wire Line
-	4250 5050 4250 5250
-Wire Wire Line
-	4250 5250 3850 5250
 NoConn ~ 3850 5050
+Wire Wire Line
+	3850 5150 4250 5150
+Wire Wire Line
+	4250 5150 4250 5050
 $EndSCHEMATC

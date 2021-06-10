@@ -1,4 +1,4 @@
-16204754898298848
+16208041544281848
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72449,3 +72449,17 @@ Thingler-esp32-vertical
 0
 8
 8
+smart-plug
+fuse-2410
+
+
+0
+2
+2
+smart-plug
+to-263-2
+
+
+0
+98
+3
