@@ -53,7 +53,7 @@ U 1 1 5E1784D1
 P 3000 1750
 F 0 "F1" V 2803 1750 50  0000 C CNN
 F 1 "Fuse 1A" V 2894 1750 50  0000 C CNN
-F 2 "smart-plug:Fuse" V 2930 1750 50  0001 C CNN
+F 2 "smart-plug:fuse-2410" V 2930 1750 50  0001 C CNN
 F 3 "~" H 3000 1750 50  0001 C CNN
 	1    3000 1750
 	0    1    1    0   
@@ -132,7 +132,7 @@ L Device:R R1
 U 1 1 5E465E83
 P 4200 2150
 F 0 "R1" V 3993 2150 50  0000 C CNN
-F 1 "200k 0.1%" V 4084 2150 50  0000 C CNN
+F 1 "200k" V 4084 2150 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4130 2150 50  0001 C CNN
 F 3 "~" H 4200 2150 50  0001 C CNN
 	1    4200 2150
@@ -141,12 +141,12 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 5E466BCA
-P 4200 2600
-F 0 "R2" V 3993 2600 50  0000 C CNN
-F 1 "200k 0.1%" V 4084 2600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4130 2600 50  0001 C CNN
-F 3 "~" H 4200 2600 50  0001 C CNN
-	1    4200 2600
+P 4200 3000
+F 0 "R2" V 3993 3000 50  0000 C CNN
+F 1 "200k" V 4084 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4130 3000 50  0001 C CNN
+F 3 "~" H 4200 3000 50  0001 C CNN
+	1    4200 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -305,10 +305,10 @@ Wire Wire Line
 Wire Wire Line
 	7900 3450 8650 3450
 $Comp
-L Device:C C6
+L Device:C C7
 U 1 1 5E4B5935
 P 8650 2650
-F 0 "C6" H 8765 2696 50  0000 L CNN
+F 0 "C7" H 8765 2696 50  0000 L CNN
 F 1 "33u" H 8765 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8688 2500 50  0001 C CNN
 F 3 "~" H 8650 2650 50  0001 C CNN
@@ -327,10 +327,10 @@ F 3 "~" H 8650 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C5
+L Device:C C6
 U 1 1 5E4B016D
 P 8500 1750
-F 0 "C5" H 8615 1796 50  0000 L CNN
+F 0 "C6" H 8615 1796 50  0000 L CNN
 F 1 "100n" H 8615 1705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8538 1600 50  0001 C CNN
 F 3 "~" H 8500 1750 50  0001 C CNN
@@ -340,10 +340,10 @@ $EndComp
 Wire Wire Line
 	7900 3450 7900 2150
 $Comp
-L smart-plug:TPS560430 U3
+L smart-plug:TPS560430 U4
 U 1 1 5E4A9009
 P 7900 1850
-F 0 "U3" H 7900 2217 50  0000 C CNN
+F 0 "U4" H 7900 2217 50  0000 C CNN
 F 1 "TPS560430X3F" H 7900 2126 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7900 1850 50  0001 C CNN
 F 3 "" H 7900 1850 50  0001 C CNN
@@ -372,12 +372,6 @@ F 3 "~" H 6900 2550 50  0001 C CNN
 	1    6900 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4200 2300 4200 2450
-Wire Wire Line
-	3150 3450 4200 3450
-Wire Wire Line
-	4200 3250 4200 3450
 Wire Wire Line
 	3450 2850 3450 3250
 Wire Wire Line
@@ -410,9 +404,6 @@ Connection ~ 4600 1750
 Wire Wire Line
 	4600 1750 4800 1750
 Wire Wire Line
-	4200 3450 4500 3450
-Connection ~ 4200 3450
-Wire Wire Line
 	4200 1750 4600 1750
 Connection ~ 4200 1750
 $Comp
@@ -438,21 +429,10 @@ F 3 "~" H 6550 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:NEUT #PWR05
-U 1 1 5B7F33F0
-P 8250 6100
-F 0 "#PWR05" H 8250 5950 50  0001 C CNN
-F 1 "NEUT" H 8268 6273 50  0000 C CNN
-F 2 "" H 8250 6100 50  0001 C CNN
-F 3 "" H 8250 6100 50  0001 C CNN
-	1    8250 6100
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:AC #PWR06
+L power:AC #PWR05
 U 1 1 5B7EDE4B
 P 8250 4200
-F 0 "#PWR06" H 8250 4100 50  0001 C CNN
+F 0 "#PWR05" H 8250 4100 50  0001 C CNN
 F 1 "AC" H 8250 4475 50  0000 C CNN
 F 2 "" H 8250 4200 50  0001 C CNN
 F 3 "" H 8250 4200 50  0001 C CNN
@@ -465,16 +445,16 @@ U 1 1 5E1784C7
 P 6800 5150
 F 0 "Q2" H 6550 5150 50  0000 L CNN
 F 1 "BTA316B-600E" H 6200 4900 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-2" H 7000 5075 50  0001 L CIN
+F 2 "smart-plug:to-263-2" H 7000 5075 50  0001 L CIN
 F 3 "http://www.nxp.com/documents/data_sheet/BT138_SER_D_E.pdf" H 6800 5150 50  0001 L CNN
 	1    6800 5150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Relay_SolidState:FODM3012 U4
+L Relay_SolidState:FODM3012 U3
 U 1 1 5E242760
 P 5700 5150
-F 0 "U4" H 5700 5475 50  0000 C CNN
+F 0 "U3" H 5700 5475 50  0000 C CNN
 F 1 "FODM3012" H 5700 5384 50  0000 C CNN
 F 2 "smart-plug:FODM3012" H 5500 4950 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/FO/FODM3053.pdf" H 5675 5150 50  0001 L CNN
@@ -482,108 +462,23 @@ F 3 "http://www.fairchildsemi.com/ds/FO/FODM3053.pdf" H 5675 5150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
-U 1 1 5F228A7D
-P 4200 3100
-F 0 "R9" V 3993 3100 50  0000 C CNN
-F 1 "2.4k 0.1%" V 4084 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4130 3100 50  0001 C CNN
-F 3 "~" H 4200 3100 50  0001 C CNN
-	1    4200 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 2750 4200 2850
-Wire Wire Line
-	4200 2850 3800 2850
-Connection ~ 4200 2850
-Wire Wire Line
-	4200 2850 4200 2950
-$Comp
-L Sensor_Current:ACS712xLCTR-30A U6
-U 1 1 5F23CC42
-P 7650 5100
-F 0 "U6" V 7400 5450 50  0000 L CNN
-F 1 "ACS71240LLCBTR-030B3" V 7500 5450 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7750 4750 50  0001 L CIN
-F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en" H 7650 5100 50  0001 C CNN
-	1    7650 5100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5F29217E
-P 9100 5400
-F 0 "R11" V 8893 5400 50  0000 C CNN
-F 1 "113k" V 8984 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9030 5400 50  0001 C CNN
-F 3 "~" H 9100 5400 50  0001 C CNN
-	1    9100 5400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 5F2B1419
-P 8650 5400
-F 0 "C7" H 8765 5446 50  0000 L CNN
-F 1 "100n" H 8765 5355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8688 5250 50  0001 C CNN
-F 3 "~" H 8650 5400 50  0001 C CNN
-	1    8650 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 5950 8650 5550
-$Comp
 L smart-plug:THINGLER-ESP32-PICO U1
 U 1 1 5F2FB7DF
 P 3350 5100
 F 0 "U1" H 2800 5500 50  0000 L CNN
 F 1 "THINGLER-ESP32-PICO" H 2000 5400 50  0000 L CNN
-F 2 "smart-plug:THINGLER-ESP32-PICO" H 3250 5200 50  0001 C CNN
+F 2 "smart-plug:Thingler-esp32-vertical" H 3250 5200 50  0001 C CNN
 F 3 "" H 3250 5200 50  0001 C CNN
 	1    3350 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 5950 3200 5950
-Wire Wire Line
-	3200 5950 4500 5950
-Text Label 7950 5600 0    50   ~ 0
-IO33
-Wire Wire Line
-	3850 5250 4000 5250
-Text Label 4000 5250 0    50   ~ 0
-IO33
-Text Label 3800 2850 0    50   ~ 0
-I37
 NoConn ~ 3300 4600
 NoConn ~ 3400 4600
-$Comp
-L smart-plug:LM4041 U5
-U 1 1 5F24D3FD
-P 4500 5550
-F 0 "U5" H 4322 5596 50  0000 R CNN
-F 1 "LM4041" H 4322 5505 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" V 4350 5600 50  0001 C CNN
-F 3 "" V 4350 5600 50  0001 C CNN
-	1    4500 5550
-	1    0    0    -1  
-$EndComp
-Connection ~ 4500 5950
-Wire Wire Line
-	4500 5950 5400 5950
-Wire Wire Line
-	3850 5150 4500 5150
-Connection ~ 4500 5150
-Wire Wire Line
-	4500 5150 4500 5300
 Wire Wire Line
 	3200 5600 3200 5950
 Connection ~ 3200 5950
-Wire Wire Line
-	4500 5800 4500 5950
-Connection ~ 5400 5950
 NoConn ~ 2850 4950
 NoConn ~ 2850 5050
 NoConn ~ 2850 5150
@@ -592,13 +487,6 @@ NoConn ~ 3300 5600
 NoConn ~ 3400 5600
 NoConn ~ 3500 5600
 NoConn ~ 3850 4950
-Wire Wire Line
-	4500 4950 4500 5150
-Wire Wire Line
-	3200 4300 4500 4300
-Text Label 3850 4450 0    50   ~ 0
-I37
-Connection ~ 3200 4300
 Wire Wire Line
 	2300 4300 3200 4300
 $Comp
@@ -615,12 +503,6 @@ $EndComp
 Wire Wire Line
 	3200 4600 3200 4300
 Wire Wire Line
-	3500 4600 3500 4450
-Wire Wire Line
-	3500 4450 3850 4450
-Wire Wire Line
-	4500 4650 4500 4300
-Wire Wire Line
 	8250 4200 8250 4400
 Wire Wire Line
 	6800 5300 6800 5350
@@ -630,37 +512,17 @@ Wire Wire Line
 	5400 5250 5400 5950
 Wire Wire Line
 	5400 5050 5150 5050
-Wire Wire Line
-	4850 5050 3850 5050
-$Comp
-L Device:R R10
-U 1 1 5F3D045B
-P 4500 4800
-F 0 "R10" V 4293 4800 50  0000 C CNN
-F 1 "12.4k" V 4384 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4430 4800 50  0001 C CNN
-F 3 "~" H 4500 4800 50  0001 C CNN
-	1    4500 4800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J1
 U 1 1 5F26D9B7
 P 8550 4500
 F 0 "J1" H 8630 4492 50  0000 L CNN
 F 1 "Screw_Terminal_01x04" H 8630 4401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 8550 4500 50  0001 C CNN
+F 2 "smart-plug:3d_power_connector" H 8550 4500 50  0001 C CNN
 F 3 "~" H 8550 4500 50  0001 C CNN
 	1    8550 4500
 	1    0    0    -1  
 $EndComp
-Connection ~ 4500 4300
-Wire Wire Line
-	4500 4300 9550 4300
-Wire Wire Line
-	9550 4300 9550 5100
-Wire Wire Line
-	9100 5550 9100 5800
 Wire Wire Line
 	8350 4400 8250 4400
 Connection ~ 8250 4400
@@ -674,56 +536,16 @@ Connection ~ 6800 4600
 Wire Wire Line
 	6800 4600 6800 5000
 Wire Wire Line
-	7100 4700 7100 5350
-Wire Wire Line
 	6800 4600 6700 4600
 Wire Wire Line
 	6400 4600 6000 4600
 Wire Wire Line
 	6000 4600 6000 5050
-Wire Wire Line
-	9100 5250 9100 5100
-Connection ~ 9100 5100
-Wire Wire Line
-	9100 5100 9550 5100
-Wire Wire Line
-	8650 5250 8650 5100
-Connection ~ 8650 5100
-Wire Wire Line
-	8650 5100 9100 5100
-Wire Wire Line
-	5400 5950 7250 5950
-Wire Wire Line
-	7550 5800 7550 5500
-Wire Wire Line
-	7550 5800 9100 5800
-Wire Wire Line
-	7650 5500 7650 5600
-Wire Wire Line
-	7650 5600 7950 5600
-Wire Wire Line
-	7850 4700 8250 4700
-Wire Wire Line
-	7450 4700 7100 4700
-Wire Wire Line
-	6800 5350 7100 5350
-Wire Wire Line
-	7250 5100 7250 5950
-Connection ~ 7250 5950
-Wire Wire Line
-	7250 5950 8650 5950
-Wire Wire Line
-	8050 5100 8650 5100
-Wire Wire Line
-	8250 4700 8250 6100
-Connection ~ 8250 4700
-Wire Wire Line
-	8250 4700 8350 4700
 $Comp
-L Device:C C8
+L Device:C C5
 U 1 1 5F42FE6E
 P 7500 2550
-F 0 "C8" H 7615 2596 50  0000 L CNN
+F 0 "C5" H 7615 2596 50  0000 L CNN
 F 1 "100n" H 7615 2505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7538 2400 50  0001 C CNN
 F 3 "~" H 7500 2550 50  0001 C CNN
@@ -750,4 +572,42 @@ Connection ~ 7500 1750
 Connection ~ 6900 1750
 Wire Wire Line
 	6900 1750 6900 2400
+Wire Wire Line
+	8250 5350 8250 4700
+Wire Wire Line
+	8250 4700 8350 4700
+Wire Wire Line
+	6800 5350 8250 5350
+$Comp
+L power:NEUT #PWR06
+U 1 1 607B144C
+P 8250 5350
+F 0 "#PWR06" H 8250 5200 50  0001 C CNN
+F 1 "NEUT" H 8268 5523 50  0000 C CNN
+F 2 "" H 8250 5350 50  0001 C CNN
+F 3 "" H 8250 5350 50  0001 C CNN
+	1    8250 5350
+	-1   0    0    1   
+$EndComp
+Connection ~ 8250 5350
+Wire Wire Line
+	3150 3450 4200 3450
+Wire Wire Line
+	4200 2300 4200 2850
+Wire Wire Line
+	4200 3150 4200 3450
+Connection ~ 4200 3450
+Wire Wire Line
+	4200 3450 4500 3450
+NoConn ~ 3500 4600
+Wire Wire Line
+	3200 5950 5400 5950
+NoConn ~ 3850 5250
+Wire Wire Line
+	4850 5050 4250 5050
+NoConn ~ 3850 5050
+Wire Wire Line
+	3850 5150 4250 5150
+Wire Wire Line
+	4250 5150 4250 5050
 $EndSCHEMATC
