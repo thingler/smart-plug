@@ -31,7 +31,26 @@ The following components has been used for Smart Plug:
 
 | Ref | Qty | Manufacturer Part Number | Manufacturer | Description | Product Link |
 | --- | --- | --- | --- | --- | --- |
-| U1 | 1 | ESP32-PICO-V3 | Espressif Systems | RF System on a Chip - SoC SIP module ESP32 with 4MByte Flash, Dual Core MCU, Wi-Fi & Bluetooth Combo, LGA48-pin, 7*7mm | [Mouser](https://www.mouser.fi/ProductDetail/Espressif-Systems/ESP32-PICO-V3?qs=%2Fha2pyFaduhAKW%252B0kbm4WirNln9M05hE2Cfek3joZqfvJDvo%252BkOm%252BA%3D%3D) |
+| C1, C2, C3, C5, C6 | 5 | C1206C104M5RACTU | KEMET | Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 0.1uF X7R 1206 20% | [Mouser](https://www.mouser.com/ProductDetail/KEMET/C1206C104M5RACTU?qs=sGAEpiMZZMs0AnBnWHyRQAyQ3AEn5kTUXS61cVd4nXQ%3D) |
+| C4 | 1 | TPSE477K010R0050 | KYOCERA AVX | Tantalum Capacitors - Solid SMD 10V 470uF 10% 2917 ESR= 50 mOhm | [Mouser](https://www.mouser.com/ProductDetail/KYOCERA-AVX/TPSE477K010R0050?qs=sGAEpiMZZMsh%252B1woXyUXjxWZTFtyFwDuJgYiJSpALQg%3D) |
+| C7 | 1 | C3216X7S0J336M160AC | TDK | Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 6.3V 33uF X7S 20% T: 1.6mm | [Mouser](https://www.mouser.com/ProductDetail/TDK/C3216X7S0J336M160AC?qs=xLDY6iXSiQZFXqsBpUFNJw%3D%3D) |
+| D1 | 1 | ABS10A-13 | Diodes Incorporated | Bridge Rectifier | [Mouser](https://www.mouser.com/ProductDetail/Diodes-Incorporated/ABS10A-13?qs=5aG0NVq1C4z7Y6XEf8aBrg%3D%3D) |
+| F1 | 1 | 0679H1000-01 | Bel Fuse | Surface Mount Fuse 1A 350 VAC 72 VCD | [Mouser](https://www.mouser.com/ProductDetail/530-0679H1000-01) |
+| J1-1 | 1 |  | ZHNL | Europe Standard Plug Insert, can only be acquired in big quantities (or as samples) | [Alibaba](https://www.alibaba.com/product-detail/Europe-Standard-Plug-Insert-two-2_1600487104594.html) |
+| J1-2 | 1 |  | ZHNL | AMD European German socket, can only be acquired in big quantities (or as samples) | [Zhnlen](http://www.zhnlen.com/en/pd.jsp?recommendFromPid=0&id=221&fromMid=827&fromColId=116), [Alibaba](https://www.alibaba.com/product-detail/German-and-serbia-Terminal-Contact-Cage_1600497363416.html) |
+| L1 | 1 | ME3220-123KLC | Coilcraft | Power Inductors - SMD 12uH Unshld 10% 840mA 470mOhms | [Mouser](https://www.mouser.com/ProductDetail/Coilcraft/ME3220-123KLC?qs=sGAEpiMZZMsg%252By3WlYCkU2kWFds1hA9DbYDsvlhd31E%3D) |
+| Q1 | 1 | STGD5NB120SZT4 | STMicroelectronics | IGBT Transistors N-Ch 1200 Volt 5 Amp | [Mouser](https://www.mouser.com/ProductDetail/STMicroelectronics/STGD5NB120SZT4?qs=Tj7OqeScv5KzkQtpY0oojQ%3D%3D) |
+| Q2 | 1 | BTA316B-600E,118 | WeEn Semiconductors | Triacs Thyristor TRIAC 600V 150A 3-Pin (2+Tab) | [Mouser](https://www.mouser.com/ProductDetail/WeEn-Semiconductors/BTA316B-600E118?qs=6YAT8rHPFU%252BjXw0I0rTt4g%3D%3D) |
+| R1, R2 | 2 | CR1206AFX-2003EAS | Bourns | Thick Film Resistors - SMD ResA-AS 1206 200k 1% 250mW TC100 | [Mouser](https://www.mouser.com/ProductDetail/Bourns/CR1206AFX-2003EAS?qs=PzGy0jfpSMsbNqkCSMTFTg%3D%3D) |
+| R3, R4 | 2 | KTR18EZPF5103 | ROHM Semiconductor | Thick Film Resistors - SMD 1206 510Kohm 1% High VoltageAEC-Q200 | [Mouser](https://www.mouser.com/ProductDetail/ROHM-Semiconductor/KTR18EZPF5103?qs=DyUWGjl%252BcVuYEq26lvIerQ%3D%3D) |
+| R5 | 1 | CRCW1206210RFKEA | Vishay / Dale | Thick Film Resistors - SMD 1/4watt 210ohms 1% | [Mouser](https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW1206210RFKEA?qs=LOE%2FbrHKynXo3sZGow1Zgw%3D%3D) |
+| R6 | 1 | CRCW120680K6FKEA | Vishay / Dale | Thick Film Resistors - SMD 1/4watt 80.6Kohms 1% | [Mouser](https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW120680K6FKEA?qs=sGAEpiMZZMtlubZbdhIBIIDv3ViF%2FKZ8GQ5VYt9J%2FQI%3D) |
+| R7 | 1 | CR1206-FX-1242ELF | Bourns | Thick Film Resistors - SMD 12.4K 1% | [Mouser](https://www.mouser.com/ProductDetail/Bourns/CR1206-FX-1242ELF?qs=sGAEpiMZZMtlubZbdhIBICIt3wBox2Qh6Yrjo1PMsNo%3D) |
+| R8 | 1 | ERJ-8ENF1800V | Panasonic | Thick Film Resistors 1206 180ohms 1% AEC-Q200 | [Mouser](https://www.mouser.com/ProductDetail/Panasonic/ERJ-8ENF1800V?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xp%2FUyp6%252BxK6s%3D) |
+| U1 | 1 | THINGLER-ESP32-PICO | Thingler | ESP32 module | [GitHub](https://github.com/thingler/esp32-pico-module) |
+| U2 | 1 | SR086SG-G | Microchip Technology / Atmel | Switching Voltage Regulators 3.3V Adjust Off-Line Switching Regulator | [Mouser](https://www.mouser.com/ProductDetail/Microchip-Technology-Atmel/SR086SG-G?qs=ph4zPCVRuvrOCUnBv7TdAA%3D%3D) |
+| U3 | 1 | FODM3012R2V-NF098 | onsemi / Fairchild | Triac & SCR Output Optocouplers MFP, 250V Random Phase Triac Output | [Mouser](https://www.mouser.com/ProductDetail/onsemi-Fairchild/FODM3012R2V-NF098?qs=0lQeLiL1qyYTpyszibB5tA%3D%3D) |
+| U4 | 1 | TPS560430X3FDBVR | Texas Instruments | Voltage Regulators - Switching Regulators SIMPLE SWITCHER 36-V, 600-mA Buck Regulator With High-Efficiency Sleep Mode 6-SOT-23 -40 to 125 | [Mouser](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS560430X3FDBVR?qs=sGAEpiMZZMsMIqGZiACxIY79W%2FZ1FL4F65GEfpgrgpedxebpzRnU7w%3D%3D) |
 
 ## License
 
