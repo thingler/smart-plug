@@ -12,20 +12,22 @@ Software has been written to either connect to the [AWS IOT service](https://git
 
 * [KiCad](https://www.kicad.org/download/) for the schematics
 * [Thingler ESP32-PICO Module](https://github.com/thingler/esp32-pico-module)
-* Either [Thingler Smart Plug Matter](https://github.com/thingler/smart-plug-matter) or [Thinger Smart Plug ESP32](https://github.com/thingler/smart-plug-esp32) for the ESP32 module.
+* Either [Thingler Smart Plug Matter](https://github.com/thingler/smart-plug-matter) or [Thinger Smart Plug ESP32 (AWS IoT)](https://github.com/thingler/smart-plug-esp32) for the ESP32 module
 * [3D design](https://www.tinkercad.com/things/a5thrdSu9my)
 
 ### Build
 
 #### Disclamer
 
-> :warning: **The Smart Plug is using dangerous voltage from the power outlet. Do not try to build this smart plug unless you know what you are doing!**
+Thingler Smart Plug is provided for informational and educational purposes only. The creator of the project and its contributors are not responsible for any damages, injuries, or losses that may result from building, modifying, or using the smart plug. Users assume all risks associated with building and using the smart plug, and should take all necessary precautions to ensure their safety. By using the smart plug or any information provided in this project, users agree to hold harmless the creator and contributors of the project from any and all claims, damages, or expenses that may arise.
 
-> :warning: **Galvanic isolation is not provided. Dangerous voltages are present when connected to the AC line. Do not try to connect any instruments to the circuit while connected to the AC line!**
+> :warning: **Warning: The Smart Plug is designed to work with high voltage AC power from the electrical outlet. This voltage can be dangerous and even deadly if not handled properly. Only experienced individuals with proper training and knowledge should attempt to build this smart plug. If you are not experienced or confident in your ability to work with high voltage electricity, do not attempt to build or use this device. Improper use or handling of the smart plug can result in serious injury or death. Always take appropriate safety measures and precautions when working with high voltage electricity.**
+
+> :warning: **Warning: The circuit does not provide galvanic isolation, which means that dangerous voltages from the AC power line can be present in the circuit. Do not attempt to connect any instruments or devices to the circuit while it is connected to the AC power line.**
 
 #### Components
 
-The PCB can be ordered from any fabrication houses by providing the [gerber files](Gerbers).
+The PCB can be ordered from any fabrication houses by providing the [gerber files](Gerbers). Note that the copper weight should be 2 oz.
 
 The following components has been used for Smart Plug:
 
@@ -51,6 +53,13 @@ The following components has been used for Smart Plug:
 | U2 | 1 | SR086SG-G | Microchip Technology / Atmel | Switching Voltage Regulators 3.3V Adjust Off-Line Switching Regulator | [Mouser](https://www.mouser.com/ProductDetail/Microchip-Technology-Atmel/SR086SG-G?qs=ph4zPCVRuvrOCUnBv7TdAA%3D%3D) |
 | U3 | 1 | FODM3012R2V-NF098 | onsemi / Fairchild | Triac & SCR Output Optocouplers MFP, 250V Random Phase Triac Output | [Mouser](https://www.mouser.com/ProductDetail/onsemi-Fairchild/FODM3012R2V-NF098?qs=0lQeLiL1qyYTpyszibB5tA%3D%3D) |
 | U4 | 1 | TPS560430X3FDBVR | Texas Instruments | Voltage Regulators - Switching Regulators SIMPLE SWITCHER 36-V, 600-mA Buck Regulator With High-Efficiency Sleep Mode 6-SOT-23 -40 to 125 | [Mouser](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS560430X3FDBVR?qs=sGAEpiMZZMsMIqGZiACxIY79W%2FZ1FL4F65GEfpgrgpedxebpzRnU7w%3D%3D) |
+
+#### Printing the 3D design
+
+The smart plug case is designed to be printed without the need for any support material. We recommend using PETG filament as it is a strong and durable material suitable for this application. Please note that in addition to the printed case, you will also need the following components to assemble the smart plug:
+
+* 2 x M2 nuts
+* 2 x M2 * 8 screws
 
 ## License
 
